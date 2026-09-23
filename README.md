@@ -1,10 +1,10 @@
-# Task 14 — Next Word Prediction (LSTM)
+# Next Word Prediction (LSTM)
 
 A next-word-prediction model trained on ~6,500 Medium article titles
 (`medium_data.csv`), plus a blog post explaining the N-gram language
 model that motivates the neural approach.
 
-📝 **Medium blog post (N-gram model):** [ADD YOUR MEDIUM LINK HERE]
+📝 **Medium blog post (N-gram model):** https://medium.com/@chn25cse400/n-gram-model-a-simple-introduction-to-predicting-the-next-word-a34f6233b9be?postPublishedType=initial
 
 ## 📁 Files
 
