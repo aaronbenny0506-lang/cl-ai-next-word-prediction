@@ -1,0 +1,17 @@
+Final validation loss:       4.7345
+Final validation accuracy:   0.2505
+Final validation perplexity: 113.80
+
+=== Top-k next-word predictions for seed phrases ===
+  "how to build a" -> ux (0.03), better (0.03), new (0.02), writer (0.02), job (0.02)
+  "a beginner's guide to" -> the (0.04), a (0.03), your (0.01), be (0.01), an (0.01)
+  "introduction to" -> the (0.05), be (0.03), a (0.02), your (0.02), machine (0.02)
+  "the future of" -> the (0.12), your (0.06), a (0.04), ai (0.03), data (0.02)
+  "why you should learn" -> from (0.52), in (0.03), a (0.03), the (0.02), on (0.02)
+
+=== Greedy multi-word continuations from seed phrases ===
+  "how to build a" -> "how to build a ux case study in 2019 design system in"
+  "a beginner's guide to" -> "a beginner's guide to the future of the future of the future"
+  "introduction to" -> "introduction to the future of the future of the future"
+  "the future of" -> "the future of the future of the future of the future"
+  "why you should learn" -> "why you should learn from the best way to be a better"

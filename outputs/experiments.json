@@ -1,0 +1,57 @@
+[
+  {
+    "name": "baseline",
+    "embed": 100,
+    "hidden": 150,
+    "layers": 1,
+    "dropout": 0.2,
+    "val_loss": 4.798090086042948,
+    "val_acc": 0.24833316237562827,
+    "val_ppl": 121.27856455647182,
+    "best_epoch": 8
+  },
+  {
+    "name": "dropout 0.5",
+    "embed": 100,
+    "hidden": 150,
+    "layers": 1,
+    "dropout": 0.5,
+    "val_loss": 4.785130818521858,
+    "val_acc": 0.24833316237562827,
+    "val_ppl": 119.71702326354034,
+    "best_epoch": 12
+  },
+  {
+    "name": "bigger (256/256)",
+    "embed": 256,
+    "hidden": 256,
+    "layers": 1,
+    "dropout": 0.5,
+    "val_loss": 4.73564939814869,
+    "val_acc": 0.24730741614524568,
+    "val_ppl": 113.93742545183561,
+    "best_epoch": 7
+  },
+  {
+    "name": "2 layers",
+    "embed": 100,
+    "hidden": 150,
+    "layers": 2,
+    "dropout": 0.5,
+    "val_loss": 4.877189293165967,
+    "val_acc": 0.24340958046979178,
+    "val_ppl": 131.2612081384023,
+    "best_epoch": 12
+  },
+  {
+    "name": "small (50/100)",
+    "embed": 50,
+    "hidden": 100,
+    "layers": 1,
+    "dropout": 0.3,
+    "val_loss": 4.848070848537159,
+    "val_acc": 0.24166581187814135,
+    "val_ppl": 127.49419683425104,
+    "best_epoch": 12
+  }
+]
