@@ -6,7 +6,7 @@ Architecture:
               -> Dropout -> Linear -> logits over the vocabulary
 
 Because training sequences are PRE-padded (padding tokens come first,
-real tokens are right-aligned — see preprocess.py), the last timestep of
+real tokens are right-aligned - preprocess.py), the last timestep of
 the LSTM's output is always the real final token of the prefix, so we
 can just take `output[:, -1, :]` without any pack_padded_sequence
 bookkeeping.
