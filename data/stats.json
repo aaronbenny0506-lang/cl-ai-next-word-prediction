@@ -1,0 +1,10 @@
+{
+  "n_titles_total": 6495,
+  "n_titles_train": 5196,
+  "n_titles_val": 1299,
+  "vocab_size": 3124,
+  "n_train_examples": 38846,
+  "n_val_examples": 9749,
+  "max_seq_len": 20,
+  "min_word_freq": 2
+}
