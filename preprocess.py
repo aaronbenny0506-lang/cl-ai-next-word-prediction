@@ -2,7 +2,7 @@
 Data preparation for next-word prediction (Task 14).
 
 Corpus: the `title` column of medium_data.csv (~6,500 Medium article
-titles). Each title is cleaned, tokenized, and turned into a set of
+titles). Each title is cleaned, tokenized and turned into a set of
 "n-gram" training examples in the classic language-modelling style:
 
     "the fall of graph neural networks" (tokenized)
@@ -14,7 +14,7 @@ titles). Each title is cleaned, tokenized, and turned into a set of
 
 i.e. every prefix of a title is one training example, and the label is
 the word that comes right after that prefix. This is the standard setup
-used for RNN/LSTM next-word-prediction demos, and it mirrors the N-gram
+used for RNN/LSTM next-word-prediction demos and it mirrors the N-gram
 idea from the blog-post part of this task: an N-gram model estimates
 P(next word | last N-1 words) from counts, while our LSTM learns the
 same conditional distribution with a neural network instead of counting.
