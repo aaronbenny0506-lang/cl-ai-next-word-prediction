@@ -12,12 +12,6 @@ titles). Each title is cleaned, tokenized, and turned into a set of
     -> [the, fall, of, graph]     -> neural
     -> ...
 
-i.e. every prefix of a title is one training example, and the label is
-the word that comes right after that prefix. This is the standard setup
-used for RNN/LSTM next-word-prediction demos, and it mirrors the N-gram
-idea from the blog-post part of this task: an N-gram model estimates
-P(next word | last N-1 words) from counts, while our LSTM learns the
-same conditional distribution with a neural network instead of counting.
 
 Run:
     python preprocess.py
