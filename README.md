@@ -1,10 +1,10 @@
-# Task 14 — Next Word Prediction (LSTM)
+# Next Word Prediction (LSTM)
 
 A next-word-prediction model (PyTorch LSTM) trained on ~6,500 Medium
 article titles (`medium_data.csv`), plus a blog post explaining the
 N-gram language model that motivates the neural approach.
 
-📝 **Medium blog post (N-gram model):** [ADD YOUR MEDIUM LINK HERE]
+📝 **Medium blog post (N-gram model):** https://medium.com/@chn25cse400/n-gram-model-a-simple-introduction-to-predicting-the-next-word-a34f6233b9be
 
 ## 🏁 Results at a glance
 
@@ -15,7 +15,7 @@ N-gram language model that motivates the neural approach.
 | Perplexity | 113.8 |
 
 Accuracy of ~25% and perplexity of ~114 are reasonable for this setup:
-titles are short and very diverse, the vocabulary is ~3,100 words, and
+titles are short and very diverse, the vocabulary is ~3,100 words and
 there are only ~39k training examples, so many next words are genuinely
 unpredictable. For reference, random guessing over 3,124 words would give
 perplexity ≈ 3,124 and accuracy ≈ 0.03%.
@@ -45,11 +45,11 @@ Curves: `outputs/loss_curve.png` · Samples: `outputs/sample_predictions.txt`
     └── experiments.md
 ```
 
-## 1️⃣ Blog Post — N-Gram Model
+## 1️⃣ Blog Post : N-Gram Model
 
 See the Medium link at the top. The post covers what an N-gram is, how
 N-gram models are trained (counting + smoothing), perplexity, use cases,
-advantages, limitations, and why neural models like this LSTM improve on
+advantages, limitations and why neural models like this LSTM improve on
 them. Source text is in `blog_post_ngram.md`.
 
 ## 2️⃣ Data Preparation
@@ -99,8 +99,8 @@ Each config trained for 12 epochs; best validation epoch reported.
 | 2 layers | 100 | 150 | 2 | 0.5 | 12 | 4.877 | 0.243 | 131.3 |
 | small (50/100) | 50 | 100 | 1 | 0.3 | 12 | 4.848 | 0.242 | 127.5 |
 
-Takeaways: more dropout helped slightly, a wider model helped most, and a
-second LSTM layer *hurt* — with only ~39k examples, extra depth mostly adds
+Takeaways: more dropout helped slightly, a wider model helped most and a
+second LSTM layer *hurt*, with only ~39k examples, extra depth mostly adds
 overfitting. The 256/256 config is the default in `train.py`.
 
 **Overfitting:** validation loss bottoms out at epoch 6 (4.73) and then
